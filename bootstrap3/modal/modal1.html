@@ -2,40 +2,33 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <title>模态框</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Bootstrap3</title>
 </head>
 <body>
-<button id="btn-open" class="btn btn-primary" data-toggle="modal" data-target="#myModal">打开模态框</button>
-<div class="modal" id="myModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
 
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-
-            <h3 class="modal-title">模态框的标题</h3>
-
-            <div class="modal-body">
-                <label for="myInput">用户名</label>
-                <input type="text" id="myInput">
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-primary" data-dismiss="modal">关闭</button>
-            </div>
-        </div>
-    </div>
-
+<div class="container">
+    <table class="table table-condensed table-striped table-bordered table-hover">
+        <thead>
+        <tr class="success">
+        <th>id</th>
+        <th>username</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="info">
+            <td>1</td>
+            <td>张三</td>
+        </tr>
+        <tr class="danger">
+            <td>2</td>
+            <td>李四</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
-<script src="../js/jquery-2.1.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script>
-    $('.dropdown-toggle').dropdown()
-</script>
 </body>
 </html>
